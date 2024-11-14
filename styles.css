@@ -15,15 +15,80 @@ body {
   #dadada 37.32%,
   #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
 }
-
-/*.poly-overlay {
-  position: relative;
+.poly-overlay {
+  position: absolute;
    height: auto;
    width: 100%;
    margin: 2px;
 
- }*/
+ }
+/* */
+ /* navigation */
+ .navbar {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 1rem;
+  background: linear-gradient(190deg, rgb(83, 75, 75) 0%, rgb(150, 24, 24) 82%);
+}
 
+.navbar .brand {
+  flex: 1;
+  color: rgb(87, 87, 83);
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+
+
+.current-page:hover {
+  color: #707070;
+}
+
+@media (max-width: 675px) {
+  nav ul {
+      flex-direction: column;
+  }
+  
+  nav li {
+      margin: .5em 0;
+  }
+}
+/*Test area*/
+
+
+
+/*test area*/
 img {
   max-width: 70%;
   display: block;
@@ -171,67 +236,7 @@ footer {
   }
 }
 
-/* navigation */
-.navbar {
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  padding: 0 1rem;
-  background: linear-gradient(190deg, rgb(83, 75, 75) 0%, rgb(150, 24, 24) 82%);
-}
 
-.navbar .brand {
-  flex: 1;
-  color: rgb(87, 87, 83);
-  text-transform: uppercase;
-  font-size: 1rem;
-  text-decoration: none;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin-left: 2em;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: .25em 0;
-}
-
-nav a:hover,
-nav a:focus {
-  color: #1792d2;
-}
-
-
-
-.current-page:hover {
-  color: #707070;
-}
-
-@media (max-width: 675px) {
-  nav ul {
-      flex-direction: column;
-  }
-  
-  nav li {
-      margin: .5em 0;
-  }
-}
 
 /* articles */
 
