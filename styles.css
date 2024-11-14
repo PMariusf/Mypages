@@ -16,10 +16,13 @@ body {
   #999494 37.43%, rgba(216, 216, 216, 0) 47.24%);
 }
 .poly-overlay {
-  position: absolute;
-   height: auto;
+  
+  background: url(/Bilder/Polygon3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: auto;
    width: 100%;
-   margin: 2px;
+   margin: 2px;*/
 
  }
 /* */
